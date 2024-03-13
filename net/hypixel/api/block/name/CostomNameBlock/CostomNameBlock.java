@@ -35,8 +35,22 @@ public class CostomeNameBlock extends JavaPlugin {
                 player.getCostomName().equals("Master+++ " + player.getName());
                 }
         }
+        this.onEnable();
         return true;
     }
+
+    public void onEnable() {
+      this.onEnable();
+
+    }
+
+    public void onDisable() {
+      /** @Hypixel {link} */
+      this.onDisable();
+
+      if(true) {
+        System.out.println(" Server is Ending");
+      }
 
 }
 
