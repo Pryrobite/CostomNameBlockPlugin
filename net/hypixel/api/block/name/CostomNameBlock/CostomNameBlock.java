@@ -13,10 +13,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class CostomeNameBlock extends JavaPlugin {
 
     /**
-     * @Hypixel {Link} - Command_Block TODO 1.0.0
+     * @Hypixel {Link} - CostomeNameBlock TODO 1.0.0
      */
 
-    public boolean onClickBlock(CommandSender sender, Command cmd, Player player, InventoryClickEvent ice, Item item) {
+    public boolean onCostomeNameBlock(CommandSender sender, Command cmd, Player player, InventoryClickEvent ice, Item item) {
         // Todo 1.0.0
         
             Block block = player.getTargetBlock(null, 0);
