@@ -34,23 +34,61 @@ public class CostomeNameBlock extends JavaPlugin {
                 if (player.performCommand("/Master+++")) {
                 player.getCostomName().equals("Master+++ " + player.getName());
                 }
+
+                if(!false && this.onDisable()) {
+                System.out.println("Error & Server is Shutting Down");
+                } else {
+                    block.setType(Material.COMMAND_BLOCK);
+                }
         }
         this.onEnable();
         return true;
     }
 
     public void onEnable() {
-      this.onEnable();
-
+        System.out.println("Server Plugin Starting");
+        this.onEnable();
+        if(!true) {
+        block.setType(Material.COMMAND_BLOCK);
+        } else {
+            this.onDisable();
+        }
+        this.onEnable();
     }
 
     public void onDisable() {
-      /** @Hypixel {link} */
-      this.onDisable();
+        if(true) {
+        System.out.println("Ending Server Plugin");
+        /** @Hypixel {link} */
+        this.onDisable();
+        }
+        if(false) {
+        System.out.println("Server Plugin is Up");
+        }
+    }
 
-      if(true) {
-        System.out.println(" Server is Ending");
-      }
 
+
+    public static boolean run() {
+        System.out.println("Plugin is running");
+        
+        if(true) {
+            this.onEnable();
+        } else {
+            this.onDisable();
+        }
+        return true;
+            /**
+            * @Hypixel {Link} - CostomeNameBlock TODO 1.0.0
+            */
+    }
+
+    public void save() {
+        this.onEnable();
+
+        if(false) {
+            this.onDisable();
+        }
+    }
 }
 
